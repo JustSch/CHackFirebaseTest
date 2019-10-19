@@ -17,7 +17,7 @@ db = firestore.client()
 #     u'born': 1815
 # })
 
-doc_ref = db.collection(u'trivia'.document(u'Fact1'))
+doc_ref = db.collection(u'trivia').document(u'Fact1'))
 doc_ref.set({
     u'question_name': u'Do You Want To Build A Snowman?',
     u'answer1': u'It Doesn\'t have to be a snowman',
@@ -26,7 +26,7 @@ doc_ref.set({
     u'answer4': u'It Doesn\'t have to be a snowman'
 })
 
-doc_ref = db.collection(u'profiles'.document(u'profile1'))
+doc_ref = db.collection(u'profiles').document(u'profile1'))
 doc_ref.set({
     u'name': u'Amelia Bedeelia',
     u'e-mail': u'fake@fake.com',
@@ -36,7 +36,7 @@ doc_ref.set({
     u'account_created': u'04-02-2019:12:12:12'
 })
 
-doc_ref = db.collection(u'events'.document(u'cleanup'))
+doc_ref = db.collection(u'events').document(u'cleanup'))
 doc_ref.set({
     u'event_name': u'Central Park Cleanup',
     u'event_location': u'insert coordinates of central park here',
