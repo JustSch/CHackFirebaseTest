@@ -89,22 +89,36 @@ doc_ref = db.collection(u'company').document(u'company')
 doc_ref.set({
     u'company_name': u'Bryant Park Cleanup Crew',
     u'company_description': u'We love Bryant park and are dedicated to keeping it clean. Join us in making a cleaner park for all of new york',
-    u'events': u'Help Clean NYC\'s Parks',
     u'advisor': u'Guy Jenkins',
     u'points_awarded': u'24',
     u'company_id': u'37',
-    u'arrayExample': [37]
+    u'events': [37]
 })
 
 doc_ref = db.collection(u'company').document(u'company2')
 doc_ref.set({
     u'company_name': u'Central Park Conservancy',
     u'company_description': u'We love Central park and are dedicated to keeping it clean. Join us in making a cleaner park for all of new york',
-    u'events': u'Help Clean NYC\'s Parks',
     u'advisor': u'Marcy Jenkins',
     u'points_awarded': u'24',
     u'company_id': u'37',
-    u'arrayExample': [77]
+    u'events': [77]
+})
+
+doc_ref = db.collection(u'prizes').document(u'prize1')
+doc_ref.set({
+    u'prize_name': u'Generic Movie Ticket',
+    u'prize_description': u'See a Free Movie at Generic Theater',
+    u'points_needed': u'24',
+    
+})
+
+doc_ref = db.collection(u'prizes').document(u'prize2')
+doc_ref.set({
+    u'prize_name': u'Generic Musuem',
+    u'prize_description': u'See The New Exhibits At Generic Musuem',
+    u'points_needed': u'23',
+    
 })
 
 
